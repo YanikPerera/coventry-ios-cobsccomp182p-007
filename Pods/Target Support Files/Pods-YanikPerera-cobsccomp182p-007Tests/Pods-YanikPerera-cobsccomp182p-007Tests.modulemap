@@ -1,0 +1,6 @@
+framework module Pods_YanikPerera_cobsccomp182p_007Tests {
+  umbrella header "Pods-YanikPerera-cobsccomp182p-007Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
