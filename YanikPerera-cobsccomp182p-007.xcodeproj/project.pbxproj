@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		35ADEB189C6BD0C1A8717EDA /* Pods_YanikPerera_cobsccomp182p_007_YanikPerera_cobsccomp182p_007UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7201FDF765CBCD4C9FE0833C /* Pods_YanikPerera_cobsccomp182p_007_YanikPerera_cobsccomp182p_007UITests.framework */; };
 		3996852023FE899700208EA3 /* User profile img.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3996851F23FE899700208EA3 /* User profile img.jpg */; };
+		3996852223FED86500208EA3 /* UiTabHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3996852123FED86500208EA3 /* UiTabHomeViewController.swift */; };
+		3996852623FEEE6B00208EA3 /* UiTabBarHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3996852523FEEE6B00208EA3 /* UiTabBarHomeViewController.swift */; };
+		3996852823FF066900208EA3 /* UiTabProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3996852723FF066900208EA3 /* UiTabProfileViewController.swift */; };
+		3996852A23FF071100208EA3 /* UiTabCreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3996852923FF071100208EA3 /* UiTabCreateViewController.swift */; };
 		39FA37A623FE4EC6007048AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FA37A523FE4EC6007048AC /* AppDelegate.swift */; };
 		39FA37A823FE4EC6007048AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FA37A723FE4EC6007048AC /* ViewController.swift */; };
 		39FA37AB23FE4EC6007048AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39FA37A923FE4EC6007048AC /* Main.storyboard */; };
@@ -48,6 +52,10 @@
 /* Begin PBXFileReference section */
 		23FFFED57F720379BE0C00C7 /* Pods-YanikPerera-cobsccomp182p-007-YanikPerera-cobsccomp182p-007UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YanikPerera-cobsccomp182p-007-YanikPerera-cobsccomp182p-007UITests.release.xcconfig"; path = "Target Support Files/Pods-YanikPerera-cobsccomp182p-007-YanikPerera-cobsccomp182p-007UITests/Pods-YanikPerera-cobsccomp182p-007-YanikPerera-cobsccomp182p-007UITests.release.xcconfig"; sourceTree = "<group>"; };
 		3996851F23FE899700208EA3 /* User profile img.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "User profile img.jpg"; sourceTree = "<group>"; };
+		3996852123FED86500208EA3 /* UiTabHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UiTabHomeViewController.swift; sourceTree = "<group>"; };
+		3996852523FEEE6B00208EA3 /* UiTabBarHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UiTabBarHomeViewController.swift; sourceTree = "<group>"; };
+		3996852723FF066900208EA3 /* UiTabProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UiTabProfileViewController.swift; sourceTree = "<group>"; };
+		3996852923FF071100208EA3 /* UiTabCreateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UiTabCreateViewController.swift; sourceTree = "<group>"; };
 		39FA37A223FE4EC6007048AC /* YanikPerera-cobsccomp182p-007.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "YanikPerera-cobsccomp182p-007.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		39FA37A523FE4EC6007048AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		39FA37A723FE4EC6007048AC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -142,6 +150,7 @@
 				39FA37AE23FE4EC7007048AC /* LaunchScreen.storyboard */,
 				39FA37B123FE4EC7007048AC /* Info.plist */,
 				39FA37D323FE50D0007048AC /* GoogleService-Info.plist */,
+				3996852523FEEE6B00208EA3 /* UiTabBarHomeViewController.swift */,
 			);
 			path = "YanikPerera-cobsccomp182p-007";
 			sourceTree = "<group>";
@@ -178,6 +187,9 @@
 			children = (
 				39FA37E523FE6E45007048AC /* UiUserRegisterViewController.swift */,
 				39FA37E723FE6E63007048AC /* UiUserLoginViewController.swift */,
+				3996852123FED86500208EA3 /* UiTabHomeViewController.swift */,
+				3996852723FF066900208EA3 /* UiTabProfileViewController.swift */,
+				3996852923FF071100208EA3 /* UiTabCreateViewController.swift */,
 			);
 			path = UIViewController;
 			sourceTree = "<group>";
@@ -460,8 +472,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3996852A23FF071100208EA3 /* UiTabCreateViewController.swift in Sources */,
 				39FA37E223FE6D98007048AC /* ValidateFields.swift in Sources */,
+				3996852623FEEE6B00208EA3 /* UiTabBarHomeViewController.swift in Sources */,
 				39FA37E023FE6D6E007048AC /* AlertFunction.swift in Sources */,
+				3996852823FF066900208EA3 /* UiTabProfileViewController.swift in Sources */,
+				3996852223FED86500208EA3 /* UiTabHomeViewController.swift in Sources */,
 				39FA37A823FE4EC6007048AC /* ViewController.swift in Sources */,
 				39FA37A623FE4EC6007048AC /* AppDelegate.swift in Sources */,
 				39FA37E623FE6E45007048AC /* UiUserRegisterViewController.swift in Sources */,

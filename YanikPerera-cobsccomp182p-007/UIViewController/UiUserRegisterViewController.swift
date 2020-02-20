@@ -56,29 +56,37 @@ class UiUserRegisterViewController: UIViewController,UIImagePickerControllerDele
                 authResult, error in
                 if ((error == nil)) {
                     
+                    let db = Firestore.firestore()
+                    let storageRef = Storage.storage().reference(forURL: "gs://nibm-events-cobsccomp182p-007.appspot.com/").child("profile_image").child(authResult!.user.uid)
+                    if let imgProfileImage = self.ImageSelect, let imageData = imgProfileImage.jpegData(compressionQuality: 0.1){
+                        storageRef.putData(imageData, metadata: nil, completion: { (metadata, error ) in
+                            if error != nil{
+                                alert.showAlert(title: "Error", message: "Image Upload Error Please Re-check", buttonText: "Okay")
+                            }
+                            
+                        })
+                    }
+                    db.collection("users").addDocument(data: ["firstname":firstname,"lastname":lastname,"email":email,"contact":contact,"department":department,"password":password,"cpassword":cpassword,"uid":authResult!.user.uid]){(error) in
+                        if error != nil{
+                            alert.showAlert(title: "Error", message: "Error saving user's data", buttonText: "Okay")
+                            
+                        }
+                    }
+                    
                     alert.showAlert(title: "Signed up successfully", message: "You have been successfully Signed up", buttonText: "Login Page")
+                    
+                    let VC1 = self.storyboard!.instantiateViewController(withIdentifier: "UiUserLoginViewController") as!UiUserLoginViewController
+                    
+                    let navController = UINavigationController(rootViewController: VC1)
+                    
+                    self.present(navController, animated:true, completion: nil)
                     
                 } else {
                     
                     alert.showAlert(title: "Error", message: "Error occured", buttonText: "Register Page")
                 }
                 
-                let db = Firestore.firestore()
-                let storageRef = Storage.storage().reference(forURL: "gs://nibm-events-cobsccomp182p-007.appspot.com/").child("profile_image").child(authResult!.user.uid)
-                if let imgProfileImage = self.ImageSelect, let imageData = imgProfileImage.jpegData(compressionQuality: 0.1){
-                    storageRef.putData(imageData, metadata: nil, completion: { (metadata, error ) in
-                        if error != nil{
-                           alert.showAlert(title: "Error", message: "Image Upload Error Please Re-check", buttonText: "Okay")
-                        }
-                        
-                    })
-                }
-                db.collection("users").addDocument(data: ["firstname":firstname,"lastname":lastname,"email":email,"contact":contact,"department":department,"password":password,"cpassword":cpassword,"uid":authResult!.user.uid]){(error) in
-                    if error != nil{
-                        alert.showAlert(title: "Error", message: "Error saving user's data", buttonText: "Okay")
-                        
-                    }
-                }
+
                 
                 // ...
             }

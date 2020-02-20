@@ -31,8 +31,8 @@ class UiUserLoginViewController: UIViewController {
             else if user != nil {
                 
                 alert.showAlert(title: "Signed in successfuly", message: "You have been successfully Signed In", buttonText: "Dashboard")
-                
-                let VC1 = self.storyboard!.instantiateViewController(withIdentifier: "ViewController") as!ViewController
+                             
+                let VC1 = self.storyboard!.instantiateViewController(withIdentifier: "UiTabBarHomeViewController") as!UiTabBarHomeViewController
                 
                 let navController = UINavigationController(rootViewController: VC1)
                 
