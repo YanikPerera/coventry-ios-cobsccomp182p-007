@@ -103,7 +103,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0iP-Jr-4nA">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="850"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2Nw-FY-zKs">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="User profile img.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="2Nw-FY-zKs">
                                                 <rect key="frame" x="113" y="8" width="176" height="191"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
@@ -311,5 +311,6 @@
     </scenes>
     <resources>
         <image name="NIBM-Logo.jpg" width="336" height="188"/>
+        <image name="User profile img.jpg" width="976" height="952"/>
     </resources>
 </document>

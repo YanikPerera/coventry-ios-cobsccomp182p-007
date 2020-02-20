@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		35ADEB189C6BD0C1A8717EDA /* Pods_YanikPerera_cobsccomp182p_007_YanikPerera_cobsccomp182p_007UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7201FDF765CBCD4C9FE0833C /* Pods_YanikPerera_cobsccomp182p_007_YanikPerera_cobsccomp182p_007UITests.framework */; };
+		3996852023FE899700208EA3 /* User profile img.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3996851F23FE899700208EA3 /* User profile img.jpg */; };
 		39FA37A623FE4EC6007048AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FA37A523FE4EC6007048AC /* AppDelegate.swift */; };
 		39FA37A823FE4EC6007048AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FA37A723FE4EC6007048AC /* ViewController.swift */; };
 		39FA37AB23FE4EC6007048AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39FA37A923FE4EC6007048AC /* Main.storyboard */; };
@@ -46,6 +47,7 @@
 
 /* Begin PBXFileReference section */
 		23FFFED57F720379BE0C00C7 /* Pods-YanikPerera-cobsccomp182p-007-YanikPerera-cobsccomp182p-007UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YanikPerera-cobsccomp182p-007-YanikPerera-cobsccomp182p-007UITests.release.xcconfig"; path = "Target Support Files/Pods-YanikPerera-cobsccomp182p-007-YanikPerera-cobsccomp182p-007UITests/Pods-YanikPerera-cobsccomp182p-007-YanikPerera-cobsccomp182p-007UITests.release.xcconfig"; sourceTree = "<group>"; };
+		3996851F23FE899700208EA3 /* User profile img.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "User profile img.jpg"; sourceTree = "<group>"; };
 		39FA37A223FE4EC6007048AC /* YanikPerera-cobsccomp182p-007.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "YanikPerera-cobsccomp182p-007.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		39FA37A523FE4EC6007048AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		39FA37A723FE4EC6007048AC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -184,6 +186,7 @@
 			isa = PBXGroup;
 			children = (
 				39FA37D923FE667C007048AC /* NIBM-Logo.jpg */,
+				3996851F23FE899700208EA3 /* User profile img.jpg */,
 				39FA37DB23FE6686007048AC /* touch-id_img.png */,
 				39FA37DD23FE66B1007048AC /* face-id-img.png */,
 			);
@@ -322,6 +325,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3996852023FE899700208EA3 /* User profile img.jpg in Resources */,
 				39FA37DC23FE6686007048AC /* touch-id_img.png in Resources */,
 				39FA37DE23FE66B1007048AC /* face-id-img.png in Resources */,
 				39FA37DA23FE667C007048AC /* NIBM-Logo.jpg in Resources */,

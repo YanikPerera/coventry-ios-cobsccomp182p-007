@@ -9,8 +9,10 @@
 import UIKit
 import FirebaseAuth
 import Firebase
+import FirebaseFirestore
+import FirebaseStorage
 
-class UiUserRegisterViewController: UIViewController {
+class UiUserRegisterViewController: UIViewController,UIImagePickerControllerDelegate,UINavigationControllerDelegate {
 
     @IBOutlet weak var imgProfileImage: UIImageView!
     @IBOutlet weak var txtFirstname: UITextField!
@@ -20,10 +22,18 @@ class UiUserRegisterViewController: UIViewController {
     @IBOutlet weak var txtDepartment: UITextField!
     @IBOutlet weak var txtPassword: UITextField!
     @IBOutlet weak var txtCpassword: UITextField!
+    
+    var ImageSelect: UIImage?
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        uploadProfilePic()
 
         // Do any additional setup after loading the view.
+    }
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        view.endEditing(true)
     }
     
     @IBAction func btnRegister(_ sender: UIButton) {
@@ -54,6 +64,15 @@ class UiUserRegisterViewController: UIViewController {
                 }
                 
                 let db = Firestore.firestore()
+                let storageRef = Storage.storage().reference(forURL: "gs://nibm-events-cobsccomp182p-007.appspot.com/").child("profile_image").child(authResult!.user.uid)
+                if let imgProfileImage = self.ImageSelect, let imageData = imgProfileImage.jpegData(compressionQuality: 0.1){
+                    storageRef.putData(imageData, metadata: nil, completion: { (metadata, error ) in
+                        if error != nil{
+                           alert.showAlert(title: "Error", message: "Image Upload Error Please Re-check", buttonText: "Okay")
+                        }
+                        
+                    })
+                }
                 db.collection("users").addDocument(data: ["firstname":firstname,"lastname":lastname,"email":email,"contact":contact,"department":department,"password":password,"cpassword":cpassword,"uid":authResult!.user.uid]){(error) in
                     if error != nil{
                         alert.showAlert(title: "Error", message: "Error saving user's data", buttonText: "Okay")
@@ -81,5 +100,30 @@ class UiUserRegisterViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    func uploadProfilePic(){
+        
+        imgProfileImage.layer.cornerRadius = 10
+        imgProfileImage.clipsToBounds = true
+        
+        let tapGuesture = UITapGestureRecognizer(target: self, action: #selector(UiUserRegisterViewController.handleSelectProfileImageView))
+        imgProfileImage.addGestureRecognizer(tapGuesture)
+        imgProfileImage.isUserInteractionEnabled = true
+    }
+    @objc func handleSelectProfileImageView(){
+        let pickerController = UIImagePickerController()
+        pickerController.delegate = self
+        present(pickerController, animated: true, completion: nil)
+    }
 
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        
+        if let image = info[.originalImage] as? UIImage {
+            ImageSelect = image
+            imgProfileImage.image = image
+        }
+        print(info)
+        
+        dismiss(animated: true, completion: nil)
+    }
 }
+
