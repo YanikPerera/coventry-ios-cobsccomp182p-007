@@ -13,7 +13,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="YanikPerera_cobsccomp182p_007" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="YanikPerera_cobsccomp182p_007" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -89,10 +89,10 @@
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="105.80357142857143"/>
         </scene>
-        <!--View Controller-->
+        <!--Ui User Register View Controller-->
         <scene sceneID="Q8N-lA-Env">
             <objects>
-                <viewController id="A0N-OX-BJH" sceneMemberID="viewController">
+                <viewController id="A0N-OX-BJH" customClass="UiUserRegisterViewController" customModule="YanikPerera_cobsccomp182p_007" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OF4-jL-Foc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -156,6 +156,9 @@
                                                 <state key="normal" title="Register">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="btnRegister:" destination="A0N-OX-BJH" eventType="touchUpInside" id="beN-2u-9kV"/>
+                                                </connections>
                                             </button>
                                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ehU-pk-for">
                                                 <rect key="frame" x="8" y="428" width="398" height="30"/>
@@ -189,15 +192,25 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="eeN-Ww-Bof"/>
                     </view>
+                    <connections>
+                        <outlet property="imgProfileImage" destination="2Nw-FY-zKs" id="jKg-j0-HW2"/>
+                        <outlet property="txtContactnum" destination="Xbq-jQ-uvR" id="jxN-Mc-RCZ"/>
+                        <outlet property="txtCpassword" destination="ehU-pk-for" id="ag2-BN-aYi"/>
+                        <outlet property="txtDepartment" destination="CB7-Uf-Mbs" id="U9A-5k-aSk"/>
+                        <outlet property="txtEmail" destination="5Lx-vY-Epq" id="uJZ-3h-3qo"/>
+                        <outlet property="txtFirstname" destination="Fgg-1q-fYz" id="p0k-8M-WLk"/>
+                        <outlet property="txtLastname" destination="IdO-4T-Urf" id="BsT-1q-zji"/>
+                        <outlet property="txtPassword" destination="kw2-VQ-4Mt" id="D7I-wu-Zmv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VAx-Oq-VxX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="508.69565217391306" y="815.625"/>
         </scene>
-        <!--View Controller-->
+        <!--Ui User Login View Controller-->
         <scene sceneID="79N-S7-G7h">
             <objects>
-                <viewController id="0qR-TV-3Tf" sceneMemberID="viewController">
+                <viewController id="0qR-TV-3Tf" customClass="UiUserLoginViewController" customModule="YanikPerera_cobsccomp182p_007" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aeI-9R-DLO">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -229,6 +242,9 @@
                                                 <state key="normal" title="Login">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="btnLogin:" destination="0qR-TV-3Tf" eventType="touchUpInside" id="wOR-FK-Hi4"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fBE-wv-bGV">
                                                 <rect key="frame" x="279" y="206" width="127" height="30"/>
@@ -236,6 +252,9 @@
                                                 <state key="normal" title="Forgot Password ?">
                                                     <color key="titleColor" red="1" green="0.1780692948" blue="0.1297323759" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="btnRecoverPassword:" destination="0qR-TV-3Tf" eventType="touchUpInside" id="W1f-ye-2Kh"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -262,6 +281,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="fH2-YK-Xzx"/>
                     </view>
+                    <connections>
+                        <outlet property="txtPassword" destination="vJm-zf-QNk" id="23q-ux-c5u"/>
+                        <outlet property="txtUsername" destination="mrO-Ea-L1D" id="YaW-sz-8ly"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RDq-wW-Mct" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

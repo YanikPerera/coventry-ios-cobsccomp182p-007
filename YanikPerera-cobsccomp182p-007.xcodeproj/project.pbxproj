@@ -19,6 +19,10 @@
 		39FA37DA23FE667C007048AC /* NIBM-Logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 39FA37D923FE667C007048AC /* NIBM-Logo.jpg */; };
 		39FA37DC23FE6686007048AC /* touch-id_img.png in Resources */ = {isa = PBXBuildFile; fileRef = 39FA37DB23FE6686007048AC /* touch-id_img.png */; };
 		39FA37DE23FE66B1007048AC /* face-id-img.png in Resources */ = {isa = PBXBuildFile; fileRef = 39FA37DD23FE66B1007048AC /* face-id-img.png */; };
+		39FA37E023FE6D6E007048AC /* AlertFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FA37DF23FE6D6E007048AC /* AlertFunction.swift */; };
+		39FA37E223FE6D98007048AC /* ValidateFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FA37E123FE6D98007048AC /* ValidateFields.swift */; };
+		39FA37E623FE6E45007048AC /* UiUserRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FA37E523FE6E45007048AC /* UiUserRegisterViewController.swift */; };
+		39FA37E823FE6E63007048AC /* UiUserLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FA37E723FE6E63007048AC /* UiUserLoginViewController.swift */; };
 		3A32E18FD200BD313E55D861 /* Pods_YanikPerera_cobsccomp182p_007.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE5B0F96CFBC7961FC0BF5E1 /* Pods_YanikPerera_cobsccomp182p_007.framework */; };
 		DD540C3E5692FD6BC7260369 /* Pods_YanikPerera_cobsccomp182p_007Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9E5035CCBEA46CF34DFB38D /* Pods_YanikPerera_cobsccomp182p_007Tests.framework */; };
 /* End PBXBuildFile section */
@@ -59,6 +63,10 @@
 		39FA37D923FE667C007048AC /* NIBM-Logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "NIBM-Logo.jpg"; sourceTree = "<group>"; };
 		39FA37DB23FE6686007048AC /* touch-id_img.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "touch-id_img.png"; sourceTree = "<group>"; };
 		39FA37DD23FE66B1007048AC /* face-id-img.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "face-id-img.png"; sourceTree = "<group>"; };
+		39FA37DF23FE6D6E007048AC /* AlertFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertFunction.swift; sourceTree = "<group>"; };
+		39FA37E123FE6D98007048AC /* ValidateFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidateFields.swift; sourceTree = "<group>"; };
+		39FA37E523FE6E45007048AC /* UiUserRegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UiUserRegisterViewController.swift; sourceTree = "<group>"; };
+		39FA37E723FE6E63007048AC /* UiUserLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UiUserLoginViewController.swift; sourceTree = "<group>"; };
 		7201FDF765CBCD4C9FE0833C /* Pods_YanikPerera_cobsccomp182p_007_YanikPerera_cobsccomp182p_007UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YanikPerera_cobsccomp182p_007_YanikPerera_cobsccomp182p_007UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		935851D72801132537012D1C /* Pods-YanikPerera-cobsccomp182p-007.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YanikPerera-cobsccomp182p-007.release.xcconfig"; path = "Target Support Files/Pods-YanikPerera-cobsccomp182p-007/Pods-YanikPerera-cobsccomp182p-007.release.xcconfig"; sourceTree = "<group>"; };
 		ABD85BF55F1E93C40E5C25F4 /* Pods-YanikPerera-cobsccomp182p-007Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YanikPerera-cobsccomp182p-007Tests.debug.xcconfig"; path = "Target Support Files/Pods-YanikPerera-cobsccomp182p-007Tests/Pods-YanikPerera-cobsccomp182p-007Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -157,6 +165,8 @@
 		39FA37D623FE62F2007048AC /* OtherFunctionController */ = {
 			isa = PBXGroup;
 			children = (
+				39FA37DF23FE6D6E007048AC /* AlertFunction.swift */,
+				39FA37E123FE6D98007048AC /* ValidateFields.swift */,
 			);
 			path = OtherFunctionController;
 			sourceTree = "<group>";
@@ -164,6 +174,8 @@
 		39FA37D723FE6315007048AC /* UIViewController */ = {
 			isa = PBXGroup;
 			children = (
+				39FA37E523FE6E45007048AC /* UiUserRegisterViewController.swift */,
+				39FA37E723FE6E63007048AC /* UiUserLoginViewController.swift */,
 			);
 			path = UIViewController;
 			sourceTree = "<group>";
@@ -444,8 +456,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39FA37E223FE6D98007048AC /* ValidateFields.swift in Sources */,
+				39FA37E023FE6D6E007048AC /* AlertFunction.swift in Sources */,
 				39FA37A823FE4EC6007048AC /* ViewController.swift in Sources */,
 				39FA37A623FE4EC6007048AC /* AppDelegate.swift in Sources */,
+				39FA37E623FE6E45007048AC /* UiUserRegisterViewController.swift in Sources */,
+				39FA37E823FE6E63007048AC /* UiUserLoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
