@@ -296,7 +296,7 @@
         <!--Profile-->
         <scene sceneID="N7b-nq-OIh">
             <objects>
-                <viewController id="9Ys-Xz-TMO" customClass="UiTabProfileViewController" customModule="YanikPerera_cobsccomp182p_007" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="9Ys-Xz-TMO" customClass="UiUserFTIdViewController" customModule="YanikPerera_cobsccomp182p_007" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2Ut-2L-ECd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -306,6 +306,24 @@
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kk3-YF-Y60">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="850"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wha-gc-Rb4">
+                                                <rect key="frame" x="164" y="183" width="86" height="99"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" backgroundImage="face-id-img.png"/>
+                                                <connections>
+                                                    <action selector="btnFaceID:" destination="9Ys-Xz-TMO" eventType="touchUpInside" id="7JJ-ED-mp4"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3l0-5O-AzC">
+                                                <rect key="frame" x="143" y="383" width="128" height="118"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" backgroundImage="touch-id_img.png"/>
+                                                <connections>
+                                                    <action selector="btnTouchID:" destination="9Ys-Xz-TMO" eventType="touchUpInside" id="llx-Cv-VF0"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="850" id="ufu-ub-E11"/>
@@ -331,10 +349,13 @@
                         <viewLayoutGuide key="safeArea" id="pXR-NH-WeO"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Profile" image="circle-user-7" id="GYf-ii-sng"/>
+                    <connections>
+                        <segue destination="N92-8M-lAF" kind="show" id="u09-Vx-EEw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mn8-f8-e8J" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4448" y="526"/>
+            <point key="canvasLocation" x="4447.826086956522" y="557.8125"/>
         </scene>
         <!--Create Event-->
         <scene sceneID="Rb5-Wb-hDs">
@@ -378,6 +399,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zvi-Hh-gFH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3613" y="816"/>
+        </scene>
+        <!--Ui Tab Profile View Controller-->
+        <scene sceneID="uPG-I5-UAT">
+            <objects>
+                <viewController storyboardIdentifier="UiTabProfileViewController" id="N92-8M-lAF" customClass="UiTabProfileViewController" customModule="YanikPerera_cobsccomp182p_007" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jbk-dO-pEW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="YBs-W3-sye"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EYo-Ia-nrE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4448" y="1355"/>
         </scene>
         <!--Events-->
         <scene sceneID="cWZ-jT-oYg">
@@ -515,8 +551,10 @@
         <image name="NIBM-Logo.jpg" width="336" height="188"/>
         <image name="User profile img.jpg" width="976" height="952"/>
         <image name="circle-user-7" width="30" height="30"/>
+        <image name="face-id-img.png" width="160" height="160"/>
         <image name="home-7" width="30" height="30"/>
         <image name="paper-piece-plus-7" width="30" height="30"/>
         <image name="server-7" width="30" height="30"/>
+        <image name="touch-id_img.png" width="800" height="600"/>
     </resources>
 </document>

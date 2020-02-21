@@ -13,6 +13,7 @@
 		3996852623FEEE6B00208EA3 /* UiTabBarHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3996852523FEEE6B00208EA3 /* UiTabBarHomeViewController.swift */; };
 		3996852823FF066900208EA3 /* UiTabProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3996852723FF066900208EA3 /* UiTabProfileViewController.swift */; };
 		3996852A23FF071100208EA3 /* UiTabCreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3996852923FF071100208EA3 /* UiTabCreateViewController.swift */; };
+		39D6755623FF9CB10068D3E3 /* UiUserFTIdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D6755523FF9CB10068D3E3 /* UiUserFTIdViewController.swift */; };
 		39FA37A623FE4EC6007048AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FA37A523FE4EC6007048AC /* AppDelegate.swift */; };
 		39FA37A823FE4EC6007048AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FA37A723FE4EC6007048AC /* ViewController.swift */; };
 		39FA37AB23FE4EC6007048AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39FA37A923FE4EC6007048AC /* Main.storyboard */; };
@@ -56,6 +57,7 @@
 		3996852523FEEE6B00208EA3 /* UiTabBarHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UiTabBarHomeViewController.swift; sourceTree = "<group>"; };
 		3996852723FF066900208EA3 /* UiTabProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UiTabProfileViewController.swift; sourceTree = "<group>"; };
 		3996852923FF071100208EA3 /* UiTabCreateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UiTabCreateViewController.swift; sourceTree = "<group>"; };
+		39D6755523FF9CB10068D3E3 /* UiUserFTIdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UiUserFTIdViewController.swift; sourceTree = "<group>"; };
 		39FA37A223FE4EC6007048AC /* YanikPerera-cobsccomp182p-007.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "YanikPerera-cobsccomp182p-007.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		39FA37A523FE4EC6007048AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		39FA37A723FE4EC6007048AC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -190,6 +192,7 @@
 				3996852123FED86500208EA3 /* UiTabHomeViewController.swift */,
 				3996852723FF066900208EA3 /* UiTabProfileViewController.swift */,
 				3996852923FF071100208EA3 /* UiTabCreateViewController.swift */,
+				39D6755523FF9CB10068D3E3 /* UiUserFTIdViewController.swift */,
 			);
 			path = UIViewController;
 			sourceTree = "<group>";
@@ -480,6 +483,7 @@
 				3996852223FED86500208EA3 /* UiTabHomeViewController.swift in Sources */,
 				39FA37A823FE4EC6007048AC /* ViewController.swift in Sources */,
 				39FA37A623FE4EC6007048AC /* AppDelegate.swift in Sources */,
+				39D6755623FF9CB10068D3E3 /* UiUserFTIdViewController.swift in Sources */,
 				39FA37E623FE6E45007048AC /* UiUserRegisterViewController.swift in Sources */,
 				39FA37E823FE6E63007048AC /* UiUserLoginViewController.swift in Sources */,
 			);
