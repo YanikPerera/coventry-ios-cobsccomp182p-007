@@ -8,12 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		35ADEB189C6BD0C1A8717EDA /* Pods_YanikPerera_cobsccomp182p_007_YanikPerera_cobsccomp182p_007UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7201FDF765CBCD4C9FE0833C /* Pods_YanikPerera_cobsccomp182p_007_YanikPerera_cobsccomp182p_007UITests.framework */; };
+		390CAA20240594A1009EE35D /* UiPostsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390CAA1F240594A1009EE35D /* UiPostsViewController.swift */; };
+		3982675624025735000CA21A /* UiEventHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3982675524025735000CA21A /* UiEventHomeViewController.swift */; };
 		3996852023FE899700208EA3 /* User profile img.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3996851F23FE899700208EA3 /* User profile img.jpg */; };
 		3996852223FED86500208EA3 /* UiTabHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3996852123FED86500208EA3 /* UiTabHomeViewController.swift */; };
 		3996852623FEEE6B00208EA3 /* UiTabBarHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3996852523FEEE6B00208EA3 /* UiTabBarHomeViewController.swift */; };
 		3996852823FF066900208EA3 /* UiTabProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3996852723FF066900208EA3 /* UiTabProfileViewController.swift */; };
 		3996852A23FF071100208EA3 /* UiTabCreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3996852923FF071100208EA3 /* UiTabCreateViewController.swift */; };
+		39AA90C42405266E00D5FEEE /* add-image.png in Resources */ = {isa = PBXBuildFile; fileRef = 39AA90C32405266E00D5FEEE /* add-image.png */; };
+		39AA90C7240586C400D5FEEE /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39AA90C6240586C400D5FEEE /* Event.swift */; };
+		39AA90CA240587BE00D5FEEE /* EventsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39AA90C9240587BE00D5FEEE /* EventsTableViewCell.swift */; };
 		39D6755623FF9CB10068D3E3 /* UiUserFTIdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D6755523FF9CB10068D3E3 /* UiUserFTIdViewController.swift */; };
+		39D8EF962402CED800F38959 /* location.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 39D8EF952402CED800F38959 /* location.jpg */; };
+		39D8EF982402E76700F38959 /* UiTabHomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D8EF972402E76700F38959 /* UiTabHomeTableViewCell.swift */; };
+		39D8EF9A2402E8E400F38959 /* ArtistModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D8EF992402E8E400F38959 /* ArtistModel.swift */; };
 		39FA37A623FE4EC6007048AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FA37A523FE4EC6007048AC /* AppDelegate.swift */; };
 		39FA37A823FE4EC6007048AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FA37A723FE4EC6007048AC /* ViewController.swift */; };
 		39FA37AB23FE4EC6007048AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39FA37A923FE4EC6007048AC /* Main.storyboard */; };
@@ -52,12 +60,20 @@
 
 /* Begin PBXFileReference section */
 		23FFFED57F720379BE0C00C7 /* Pods-YanikPerera-cobsccomp182p-007-YanikPerera-cobsccomp182p-007UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YanikPerera-cobsccomp182p-007-YanikPerera-cobsccomp182p-007UITests.release.xcconfig"; path = "Target Support Files/Pods-YanikPerera-cobsccomp182p-007-YanikPerera-cobsccomp182p-007UITests/Pods-YanikPerera-cobsccomp182p-007-YanikPerera-cobsccomp182p-007UITests.release.xcconfig"; sourceTree = "<group>"; };
+		390CAA1F240594A1009EE35D /* UiPostsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UiPostsViewController.swift; sourceTree = "<group>"; };
+		3982675524025735000CA21A /* UiEventHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UiEventHomeViewController.swift; sourceTree = "<group>"; };
 		3996851F23FE899700208EA3 /* User profile img.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "User profile img.jpg"; sourceTree = "<group>"; };
 		3996852123FED86500208EA3 /* UiTabHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UiTabHomeViewController.swift; sourceTree = "<group>"; };
 		3996852523FEEE6B00208EA3 /* UiTabBarHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UiTabBarHomeViewController.swift; sourceTree = "<group>"; };
 		3996852723FF066900208EA3 /* UiTabProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UiTabProfileViewController.swift; sourceTree = "<group>"; };
 		3996852923FF071100208EA3 /* UiTabCreateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UiTabCreateViewController.swift; sourceTree = "<group>"; };
+		39AA90C32405266E00D5FEEE /* add-image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "add-image.png"; sourceTree = "<group>"; };
+		39AA90C6240586C400D5FEEE /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		39AA90C9240587BE00D5FEEE /* EventsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsTableViewCell.swift; sourceTree = "<group>"; };
 		39D6755523FF9CB10068D3E3 /* UiUserFTIdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UiUserFTIdViewController.swift; sourceTree = "<group>"; };
+		39D8EF952402CED800F38959 /* location.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = location.jpg; sourceTree = "<group>"; };
+		39D8EF972402E76700F38959 /* UiTabHomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UiTabHomeTableViewCell.swift; sourceTree = "<group>"; };
+		39D8EF992402E8E400F38959 /* ArtistModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistModel.swift; sourceTree = "<group>"; };
 		39FA37A223FE4EC6007048AC /* YanikPerera-cobsccomp182p-007.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "YanikPerera-cobsccomp182p-007.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		39FA37A523FE4EC6007048AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		39FA37A723FE4EC6007048AC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -117,6 +133,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		39AA90C52405869600D5FEEE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				39AA90C6240586C400D5FEEE /* Event.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		39AA90C82405876D00D5FEEE /* UItableviewcell */ = {
+			isa = PBXGroup;
+			children = (
+				39AA90C9240587BE00D5FEEE /* EventsTableViewCell.swift */,
+			);
+			path = UItableviewcell;
+			sourceTree = "<group>";
+		};
 		39FA379923FE4EC6007048AC = {
 			isa = PBXGroup;
 			children = (
@@ -142,12 +174,16 @@
 		39FA37A423FE4EC6007048AC /* YanikPerera-cobsccomp182p-007 */ = {
 			isa = PBXGroup;
 			children = (
+				39AA90C82405876D00D5FEEE /* UItableviewcell */,
+				39AA90C52405869600D5FEEE /* Model */,
 				39FA37D823FE632D007048AC /* Images */,
 				39FA37D723FE6315007048AC /* UIViewController */,
 				39FA37D623FE62F2007048AC /* OtherFunctionController */,
 				39FA37A523FE4EC6007048AC /* AppDelegate.swift */,
 				39FA37A723FE4EC6007048AC /* ViewController.swift */,
 				39FA37A923FE4EC6007048AC /* Main.storyboard */,
+				39D8EF992402E8E400F38959 /* ArtistModel.swift */,
+				39D8EF972402E76700F38959 /* UiTabHomeTableViewCell.swift */,
 				39FA37AC23FE4EC7007048AC /* Assets.xcassets */,
 				39FA37AE23FE4EC7007048AC /* LaunchScreen.storyboard */,
 				39FA37B123FE4EC7007048AC /* Info.plist */,
@@ -193,6 +229,8 @@
 				3996852723FF066900208EA3 /* UiTabProfileViewController.swift */,
 				3996852923FF071100208EA3 /* UiTabCreateViewController.swift */,
 				39D6755523FF9CB10068D3E3 /* UiUserFTIdViewController.swift */,
+				3982675524025735000CA21A /* UiEventHomeViewController.swift */,
+				390CAA1F240594A1009EE35D /* UiPostsViewController.swift */,
 			);
 			path = UIViewController;
 			sourceTree = "<group>";
@@ -201,6 +239,8 @@
 			isa = PBXGroup;
 			children = (
 				39FA37D923FE667C007048AC /* NIBM-Logo.jpg */,
+				39AA90C32405266E00D5FEEE /* add-image.png */,
+				39D8EF952402CED800F38959 /* location.jpg */,
 				3996851F23FE899700208EA3 /* User profile img.jpg */,
 				39FA37DB23FE6686007048AC /* touch-id_img.png */,
 				39FA37DD23FE66B1007048AC /* face-id-img.png */,
@@ -343,6 +383,8 @@
 				3996852023FE899700208EA3 /* User profile img.jpg in Resources */,
 				39FA37DC23FE6686007048AC /* touch-id_img.png in Resources */,
 				39FA37DE23FE66B1007048AC /* face-id-img.png in Resources */,
+				39AA90C42405266E00D5FEEE /* add-image.png in Resources */,
+				39D8EF962402CED800F38959 /* location.jpg in Resources */,
 				39FA37DA23FE667C007048AC /* NIBM-Logo.jpg in Resources */,
 				39FA37B023FE4EC7007048AC /* LaunchScreen.storyboard in Resources */,
 				39FA37D423FE50D0007048AC /* GoogleService-Info.plist in Resources */,
@@ -477,15 +519,21 @@
 			files = (
 				3996852A23FF071100208EA3 /* UiTabCreateViewController.swift in Sources */,
 				39FA37E223FE6D98007048AC /* ValidateFields.swift in Sources */,
+				39D8EF9A2402E8E400F38959 /* ArtistModel.swift in Sources */,
+				390CAA20240594A1009EE35D /* UiPostsViewController.swift in Sources */,
 				3996852623FEEE6B00208EA3 /* UiTabBarHomeViewController.swift in Sources */,
+				39AA90C7240586C400D5FEEE /* Event.swift in Sources */,
 				39FA37E023FE6D6E007048AC /* AlertFunction.swift in Sources */,
 				3996852823FF066900208EA3 /* UiTabProfileViewController.swift in Sources */,
 				3996852223FED86500208EA3 /* UiTabHomeViewController.swift in Sources */,
+				3982675624025735000CA21A /* UiEventHomeViewController.swift in Sources */,
 				39FA37A823FE4EC6007048AC /* ViewController.swift in Sources */,
 				39FA37A623FE4EC6007048AC /* AppDelegate.swift in Sources */,
 				39D6755623FF9CB10068D3E3 /* UiUserFTIdViewController.swift in Sources */,
+				39AA90CA240587BE00D5FEEE /* EventsTableViewCell.swift in Sources */,
 				39FA37E623FE6E45007048AC /* UiUserRegisterViewController.swift in Sources */,
 				39FA37E823FE6E63007048AC /* UiUserLoginViewController.swift in Sources */,
+				39D8EF982402E76700F38959 /* UiTabHomeTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,11 +7,18 @@
 //
 
 import UIKit
+import FirebaseAuth
+import FirebaseDatabase
 
-class UiTabHomeViewController: UIViewController {
-
+class UiTabHomeViewController: UIViewController{
+   // @IBOutlet weak var tblTableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+       // tblTableView.dataSource = self
+        
+      //  loadPosts()
+       // setupElements()
 
         // Do any additional setup after loading the view.
     }
@@ -26,5 +33,31 @@ class UiTabHomeViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    func tableView(_ tblTableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 10
+    }
+    func tableView(_ tblTableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tblTableView.dequeueReusableCell(withIdentifier: "users", for: indexPath)
+        
+        cell.textLabel?.text = "\(indexPath.row)"
+        cell.backgroundColor = UIColor.red
+        return cell
+        
+    }
 
 }
+func setupElements(){
+    
+  // tblTableView.layer.backgroundColor = UIColor.clear.cgColor
+  // view.addVerticalGradientLayer(topColor: primaryColor, bottomColor: secondaryColor)
+}
+
+func loadPosts(){
+    Database.database().reference().child("firstname").observe(.childAdded) { (snapshot: DataSnapshot) in
+        print(snapshot.value!)
+    }
+}
+
+
+
+

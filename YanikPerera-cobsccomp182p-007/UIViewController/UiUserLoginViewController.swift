@@ -28,7 +28,7 @@ class UiUserLoginViewController: UIViewController {
                 
                 alert.showAlert(title: "Error occured", message: "You have error with your mail and password", buttonText: "Okay")
             }
-            else if user != nil {
+           else if user != nil {
                 
                 alert.showAlert(title: "Signed in successfuly", message: "You have been successfully Signed In", buttonText: "Dashboard")
                              

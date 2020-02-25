@@ -28,7 +28,7 @@ class UiUserRegisterViewController: UIViewController,UIImagePickerControllerDele
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        uploadProfilePic()
+        profilePictureUpload()
 
         // Do any additional setup after loading the view.
     }
@@ -37,6 +37,7 @@ class UiUserRegisterViewController: UIViewController,UIImagePickerControllerDele
     }
     
     @IBAction func btnRegister(_ sender: UIButton) {
+        
         let validator = ValidateFields()
         
         if(validator.usernameValid(username: (txtEmail.text ?? "")) && validator.passwordValid(password: txtPassword.text ?? "")) {
@@ -55,9 +56,9 @@ class UiUserRegisterViewController: UIViewController,UIImagePickerControllerDele
                 
                 authResult, error in
                 if ((error == nil)) {
+                   let db = Firestore.firestore()
+                    let storageRef = Storage.storage().reference(forURL: "gs://nibm-events-cobsccomp182p-007.appspot.com/").child("User_profile_images").child(authResult!.user.uid)
                     
-                    let db = Firestore.firestore()
-                    let storageRef = Storage.storage().reference(forURL: "gs://nibm-events-cobsccomp182p-007.appspot.com/").child("profile_image").child(authResult!.user.uid)
                     if let imgProfileImage = self.ImageSelect, let imageData = imgProfileImage.jpegData(compressionQuality: 0.1){
                         storageRef.putData(imageData, metadata: nil, completion: { (metadata, error ) in
                             if error != nil{
@@ -66,7 +67,9 @@ class UiUserRegisterViewController: UIViewController,UIImagePickerControllerDele
                             
                         })
                     }
-                    db.collection("users").addDocument(data: ["firstname":firstname,"lastname":lastname,"email":email,"contact":contact,"department":department,"password":password,"cpassword":cpassword,"uid":authResult!.user.uid]){(error) in
+
+                   db.collection("users").addDocument(data: ["firstname":firstname,"lastname":lastname,"email":email,"contact":contact,"department":department,"password":password,"cpassword":cpassword,
+                        "uid":authResult!.user.uid]){(error) in
                         if error != nil{
                             alert.showAlert(title: "Error", message: "Error saving user's data", buttonText: "Okay")
                             
@@ -108,7 +111,17 @@ class UiUserRegisterViewController: UIViewController,UIImagePickerControllerDele
         // Pass the selected object to the new view controller.
     }
     */
-    func uploadProfilePic(){
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        
+        if let image = info[.originalImage] as? UIImage {
+            ImageSelect = image
+            imgProfileImage.image = image
+        }
+        print(info)
+        
+        dismiss(animated: true, completion: nil)
+    }
+    func profilePictureUpload(){
         
         imgProfileImage.layer.cornerRadius = 10
         imgProfileImage.clipsToBounds = true
@@ -123,15 +136,5 @@ class UiUserRegisterViewController: UIViewController,UIImagePickerControllerDele
         present(pickerController, animated: true, completion: nil)
     }
 
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-        
-        if let image = info[.originalImage] as? UIImage {
-            ImageSelect = image
-            imgProfileImage.image = image
-        }
-        print(info)
-        
-        dismiss(animated: true, completion: nil)
-    }
 }
 

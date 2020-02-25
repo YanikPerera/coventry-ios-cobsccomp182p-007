@@ -19,6 +19,13 @@ class UiUserFTIdViewController: UIViewController {
     }
     
     @IBAction func btnFaceID(_ sender: UIButton) {
+      /*  func checkUserIsLoggedIn(){
+            if Auth.auth().currentUser?.uid == nil{
+                let alert = AlertFunction()
+        alert.showAlert(title: "You are not loged User please Login First ", message: "Error occured",buttonText: "Okay")
+
+            }else{*/
+            
         let alert = AlertFunction()
         let localAuthenticationContext = LAContext()
         localAuthenticationContext.localizedFallbackTitle = "Please use your Passcode"
@@ -30,12 +37,12 @@ class UiUserFTIdViewController: UIViewController {
         if localAuthenticationContext.canEvaluatePolicy(LAPolicy.deviceOwnerAuthentication, error: &authorizationError) {
             
             _ = localAuthenticationContext.biometryType == LABiometryType.faceID ? "Face ID" : "Touch ID"
-            
-            
             localAuthenticationContext.evaluatePolicy(LAPolicy.deviceOwnerAuthentication, localizedReason: reason) { (success, evaluationError) in
                 if success {
                     
                     alert.showAlert(title: "Success", message: "Awesome!!... User authenticated successfully.",buttonText: "Okay")
+                    
+                    
                     let VC1 = self.storyboard!.instantiateViewController(withIdentifier: "UiTabProfileViewController") as!UiTabProfileViewController
                     
                     let navController = UINavigationController(rootViewController: VC1)
@@ -59,7 +66,8 @@ class UiUserFTIdViewController: UIViewController {
             alert.showAlert(title: "Error", message: "User has not enrolled into using Biometricsd",buttonText: "Okay")
             
         }
-    }
+            }//}}
+        
     
     @IBAction func btnTouchID(_ sender: UIButton) {
         let alert = AlertFunction()
