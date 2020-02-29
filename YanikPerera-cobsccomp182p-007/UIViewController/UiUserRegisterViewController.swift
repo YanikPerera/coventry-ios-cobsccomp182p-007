@@ -22,26 +22,63 @@ class UiUserRegisterViewController: UIViewController,UIImagePickerControllerDele
     @IBOutlet weak var txtDepartment: UITextField!
     @IBOutlet weak var txtPassword: UITextField!
     @IBOutlet weak var txtCpassword: UITextField!
+    @IBOutlet weak var btnRegiter: UIButton!
     
     var ImageSelect: UIImage?
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        styleElements()
         profilePictureUpload()
 
         // Do any additional setup after loading the view.
     }
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        
         view.endEditing(true)
     }
     
+    func styleElements(){
+        
+        Utility.btnButtonStyles(btnRegiter)
+        Utility.txtTextFieldStyles(txtFirstname)
+        Utility.txtTextFieldStyles(txtLastname)
+        Utility.txtTextFieldStyles(txtEmail)
+        Utility.txtTextFieldStyles(txtContactnum)
+        Utility.txtTextFieldStyles(txtDepartment)
+        Utility.txtTextFieldStyles(txtPassword)
+        Utility.txtTextFieldStyles(txtCpassword)
+
+        
+    }
     @IBAction func btnRegister(_ sender: UIButton) {
         
         let validator = ValidateFields()
+        let alert = AlertFunction()
         
-        if(validator.usernameValid(username: (txtEmail.text ?? "")) && validator.passwordValid(password: txtPassword.text ?? "")) {
+        if(validator.usernameValid(username: (txtEmail.text ?? ""))) {
+            if(validator.passwordValid(password: (txtPassword.text ?? ""))) {
+                if(validator.contactValid(contact: (txtContactnum.text ?? ""))) {
+           
             
+            if (txtFirstname.text == "") {
+                alert.showAlert(title: "Error with Save", message: "Please Fill First Name:",buttonText: "Add Missing Field")
+                return}
+            if (txtLastname.text == "") {
+                alert.showAlert(title: "Error with Save", message: "Please Fill Last Name:",buttonText: "Add Missing Field")
+                return}
+           
+            if (txtDepartment.text == "") {
+                alert.showAlert(title: "Error with Save", message: "Please Fill Department:",buttonText: "Add Missing Field")
+                return}
+            if (txtCpassword.text == "") {
+                alert.showAlert(title: "Error with Save", message: "Please Fill Confirm Password:",buttonText: "Add Missing Field")
+                return}
+            if (txtCpassword.text != txtPassword.text ) {
+                alert.showAlert(title: "Error with Save", message: "Password And Confirm Password Should Be Match",buttonText: "Fix Error")
+                return}
+           
             let alert = AlertFunction()
             
             let firstname = txtFirstname.text!.trimmingCharacters(in:.whitespacesAndNewlines)
@@ -92,13 +129,30 @@ class UiUserRegisterViewController: UIViewController,UIImagePickerControllerDele
 
                 
                 // ...
+                    }
+                }
+                
+                else{
+                        
+                        let alert = AlertFunction()
+                        
+                        alert.showAlert(title: "Error", message: "Please enter 10 Digit ContactNnumber", buttonText: "Register")
+                    }
+
+                
             }
+                else{
+                    
+                    let alert = AlertFunction()
+                    
+                    alert.showAlert(title: "Error", message: "Password Strength is Not Enough", buttonText: "Register")
+                }
             
         }else{
             
             let alert = AlertFunction()
             
-            alert.showAlert(title: "Error", message: "Username or password is invalid", buttonText: "Register")
+            alert.showAlert(title: "Error", message: "Please Fill Email and it should be have Regular format Ex- abc@.com: ", buttonText: "Register")
         }
     }
     

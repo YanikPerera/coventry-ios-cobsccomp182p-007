@@ -20,6 +20,9 @@ class UiTabCreateViewController: UIViewController {
     @IBOutlet weak var txtLocation: UITextField!
     @IBOutlet weak var imgPicture: UIImageView!
     @IBOutlet weak var txtSummary: UITextField!
+    @IBOutlet weak var btnUploadEvent: UIButton!
+    @IBOutlet weak var btnAddimg: UIButton!
+    @IBOutlet weak var btnLocation: UIButton!
     
     var imagePicker:UIImagePickerController!
     var ref = DatabaseReference.init()
@@ -33,6 +36,7 @@ class UiTabCreateViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        styleElements()
         imagePicker = UIImagePickerController()
         imagePicker.allowsEditing = true
         imagePicker.sourceType = .photoLibrary
@@ -44,6 +48,16 @@ class UiTabCreateViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    func styleElements(){
+        
+        Utility.btnButtonStyles(btnUploadEvent)
+        Utility.txtTextFieldStyles(txtEventTitle)
+        Utility.txtTextFieldStyles(txtEventDiscription)
+        Utility.txtTextFieldStyles(txtLocation)
+        Utility.txtTextFieldStyles(txtSummary)
+        
+    }
+
 
     /*
     // MARK: - Navigation
@@ -67,22 +81,24 @@ class UiTabCreateViewController: UIViewController {
             return
         }
         
-        if (txtEventDiscription.text == ""){
-            alert.showAlert(title: "Event", message: "Title is required:",buttonText: "Add Missing Event")
+       
+        if (txtLocation.text == ""){
+            alert.showAlert(title: "Event", message: "Event Location is required:",buttonText: "Add Missing Event")
             return
         }
         if (imgPicture.image == nil){
             alert.showAlert(title: "Event", message: "Event Image is required:",buttonText: "Add Missing Event")
             return
         }
-        if (txtSummary.text == nil){
+        if (txtSummary.text == ""){
             alert.showAlert(title: "Event", message: "Event Summery is required:",buttonText: "Add Missing Event")
             return
         }
-        if (txtLocation.text == nil){
-            alert.showAlert(title: "Event", message: "Location is required:",buttonText: "Add Missing Event")
+        if (txtEventDiscription.text == ""){
+            alert.showAlert(title: "Event", message: "Event Discription is Required:",buttonText: "Add Missing Event")
             return
         }
+      
         self.saveFIRData()
         //navigationController?.popViewController(animated: true)
         

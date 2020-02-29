@@ -15,6 +15,10 @@
 		3996852623FEEE6B00208EA3 /* UiTabBarHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3996852523FEEE6B00208EA3 /* UiTabBarHomeViewController.swift */; };
 		3996852823FF066900208EA3 /* UiTabProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3996852723FF066900208EA3 /* UiTabProfileViewController.swift */; };
 		3996852A23FF071100208EA3 /* UiTabCreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3996852923FF071100208EA3 /* UiTabCreateViewController.swift */; };
+		39A91025240A515D0050BFDC /* Event.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 39A91024240A515D0050BFDC /* Event.jpeg */; };
+		39A91027240A59210050BFDC /* Government_logo.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 39A91026240A59200050BFDC /* Government_logo.jpeg */; };
+		39A91029240A5AB10050BFDC /* EventElephant.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 39A91028240A5AB10050BFDC /* EventElephant.jpg */; };
+		39A9102B240A68D70050BFDC /* events_bricks-825x510.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 39A9102A240A68D70050BFDC /* events_bricks-825x510.jpg */; };
 		39AA90C42405266E00D5FEEE /* add-image.png in Resources */ = {isa = PBXBuildFile; fileRef = 39AA90C32405266E00D5FEEE /* add-image.png */; };
 		39AA90C7240586C400D5FEEE /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39AA90C6240586C400D5FEEE /* Event.swift */; };
 		39AA90CA240587BE00D5FEEE /* EventsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39AA90C9240587BE00D5FEEE /* EventsTableViewCell.swift */; };
@@ -37,6 +41,7 @@
 		39FA37E223FE6D98007048AC /* ValidateFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FA37E123FE6D98007048AC /* ValidateFields.swift */; };
 		39FA37E623FE6E45007048AC /* UiUserRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FA37E523FE6E45007048AC /* UiUserRegisterViewController.swift */; };
 		39FA37E823FE6E63007048AC /* UiUserLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FA37E723FE6E63007048AC /* UiUserLoginViewController.swift */; };
+		39FF40622408399B0068FCF8 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FF40612408399B0068FCF8 /* Utility.swift */; };
 		3A32E18FD200BD313E55D861 /* Pods_YanikPerera_cobsccomp182p_007.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE5B0F96CFBC7961FC0BF5E1 /* Pods_YanikPerera_cobsccomp182p_007.framework */; };
 		DD540C3E5692FD6BC7260369 /* Pods_YanikPerera_cobsccomp182p_007Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9E5035CCBEA46CF34DFB38D /* Pods_YanikPerera_cobsccomp182p_007Tests.framework */; };
 /* End PBXBuildFile section */
@@ -67,6 +72,10 @@
 		3996852523FEEE6B00208EA3 /* UiTabBarHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UiTabBarHomeViewController.swift; sourceTree = "<group>"; };
 		3996852723FF066900208EA3 /* UiTabProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UiTabProfileViewController.swift; sourceTree = "<group>"; };
 		3996852923FF071100208EA3 /* UiTabCreateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UiTabCreateViewController.swift; sourceTree = "<group>"; };
+		39A91024240A515D0050BFDC /* Event.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Event.jpeg; sourceTree = "<group>"; };
+		39A91026240A59200050BFDC /* Government_logo.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Government_logo.jpeg; sourceTree = "<group>"; };
+		39A91028240A5AB10050BFDC /* EventElephant.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = EventElephant.jpg; sourceTree = "<group>"; };
+		39A9102A240A68D70050BFDC /* events_bricks-825x510.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "events_bricks-825x510.jpg"; sourceTree = "<group>"; };
 		39AA90C32405266E00D5FEEE /* add-image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "add-image.png"; sourceTree = "<group>"; };
 		39AA90C6240586C400D5FEEE /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		39AA90C9240587BE00D5FEEE /* EventsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsTableViewCell.swift; sourceTree = "<group>"; };
@@ -95,6 +104,7 @@
 		39FA37E123FE6D98007048AC /* ValidateFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidateFields.swift; sourceTree = "<group>"; };
 		39FA37E523FE6E45007048AC /* UiUserRegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UiUserRegisterViewController.swift; sourceTree = "<group>"; };
 		39FA37E723FE6E63007048AC /* UiUserLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UiUserLoginViewController.swift; sourceTree = "<group>"; };
+		39FF40612408399B0068FCF8 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 		7201FDF765CBCD4C9FE0833C /* Pods_YanikPerera_cobsccomp182p_007_YanikPerera_cobsccomp182p_007UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YanikPerera_cobsccomp182p_007_YanikPerera_cobsccomp182p_007UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		935851D72801132537012D1C /* Pods-YanikPerera-cobsccomp182p-007.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YanikPerera-cobsccomp182p-007.release.xcconfig"; path = "Target Support Files/Pods-YanikPerera-cobsccomp182p-007/Pods-YanikPerera-cobsccomp182p-007.release.xcconfig"; sourceTree = "<group>"; };
 		ABD85BF55F1E93C40E5C25F4 /* Pods-YanikPerera-cobsccomp182p-007Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YanikPerera-cobsccomp182p-007Tests.debug.xcconfig"; path = "Target Support Files/Pods-YanikPerera-cobsccomp182p-007Tests/Pods-YanikPerera-cobsccomp182p-007Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -174,6 +184,7 @@
 		39FA37A423FE4EC6007048AC /* YanikPerera-cobsccomp182p-007 */ = {
 			isa = PBXGroup;
 			children = (
+				39FF40602408397B0068FCF8 /* Styles */,
 				39AA90C82405876D00D5FEEE /* UItableviewcell */,
 				39AA90C52405869600D5FEEE /* Model */,
 				39FA37D823FE632D007048AC /* Images */,
@@ -241,11 +252,23 @@
 				39FA37D923FE667C007048AC /* NIBM-Logo.jpg */,
 				39AA90C32405266E00D5FEEE /* add-image.png */,
 				39D8EF952402CED800F38959 /* location.jpg */,
+				39A91024240A515D0050BFDC /* Event.jpeg */,
+				39A9102A240A68D70050BFDC /* events_bricks-825x510.jpg */,
+				39A91026240A59200050BFDC /* Government_logo.jpeg */,
 				3996851F23FE899700208EA3 /* User profile img.jpg */,
+				39A91028240A5AB10050BFDC /* EventElephant.jpg */,
 				39FA37DB23FE6686007048AC /* touch-id_img.png */,
 				39FA37DD23FE66B1007048AC /* face-id-img.png */,
 			);
 			path = Images;
+			sourceTree = "<group>";
+		};
+		39FF40602408397B0068FCF8 /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				39FF40612408399B0068FCF8 /* Utility.swift */,
+			);
+			path = Styles;
 			sourceTree = "<group>";
 		};
 		675F2B3A6B0D776BCCD2160B /* Frameworks */ = {
@@ -381,13 +404,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				3996852023FE899700208EA3 /* User profile img.jpg in Resources */,
+				39A91027240A59210050BFDC /* Government_logo.jpeg in Resources */,
 				39FA37DC23FE6686007048AC /* touch-id_img.png in Resources */,
 				39FA37DE23FE66B1007048AC /* face-id-img.png in Resources */,
+				39A91025240A515D0050BFDC /* Event.jpeg in Resources */,
 				39AA90C42405266E00D5FEEE /* add-image.png in Resources */,
 				39D8EF962402CED800F38959 /* location.jpg in Resources */,
 				39FA37DA23FE667C007048AC /* NIBM-Logo.jpg in Resources */,
 				39FA37B023FE4EC7007048AC /* LaunchScreen.storyboard in Resources */,
 				39FA37D423FE50D0007048AC /* GoogleService-Info.plist in Resources */,
+				39A9102B240A68D70050BFDC /* events_bricks-825x510.jpg in Resources */,
+				39A91029240A5AB10050BFDC /* EventElephant.jpg in Resources */,
 				39FA37AD23FE4EC7007048AC /* Assets.xcassets in Resources */,
 				39FA37AB23FE4EC6007048AC /* Main.storyboard in Resources */,
 			);
@@ -524,6 +551,7 @@
 				3996852623FEEE6B00208EA3 /* UiTabBarHomeViewController.swift in Sources */,
 				39AA90C7240586C400D5FEEE /* Event.swift in Sources */,
 				39FA37E023FE6D6E007048AC /* AlertFunction.swift in Sources */,
+				39FF40622408399B0068FCF8 /* Utility.swift in Sources */,
 				3996852823FF066900208EA3 /* UiTabProfileViewController.swift in Sources */,
 				3996852223FED86500208EA3 /* UiTabHomeViewController.swift in Sources */,
 				3982675624025735000CA21A /* UiEventHomeViewController.swift in Sources */,
@@ -708,7 +736,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D069AB362A287295B52B0553 /* Pods-YanikPerera-cobsccomp182p-007.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 59397P39PU;
 				INFOPLIST_FILE = "YanikPerera-cobsccomp182p-007/Info.plist";
@@ -727,7 +755,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 935851D72801132537012D1C /* Pods-YanikPerera-cobsccomp182p-007.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 59397P39PU;
 				INFOPLIST_FILE = "YanikPerera-cobsccomp182p-007/Info.plist";

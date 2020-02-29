@@ -18,6 +18,11 @@ class UiTabProfileViewController: UIViewController {
     @IBOutlet weak var txtLastName: UITextField!
     @IBOutlet weak var txtContact: UITextField!
     @IBOutlet weak var txtDepartment: UITextField!
+    @IBOutlet weak var btnDashboard: UIButton!
+    @IBOutlet weak var btnUpdateProfile: UIButton!
+    @IBOutlet weak var btnPickProfile: UIButton!
+    
+    
     var window: UIWindow?
     let alert = AlertFunction()
     var imagePicker:UIImagePickerController!
@@ -26,6 +31,7 @@ class UiTabProfileViewController: UIViewController {
         
         
         super.viewDidLoad()
+        styleElements()
         imagePicker = UIImagePickerController()
         imagePicker.allowsEditing = true
         imagePicker.sourceType = .photoLibrary
@@ -44,6 +50,13 @@ class UiTabProfileViewController: UIViewController {
         
     }
     
+    func styleElements(){
+        Utility.btnButtonStyles(btnDashboard)
+        Utility.txtTextFieldStyles(txtFirstName)
+        Utility.txtTextFieldStyles(txtLastName)
+        Utility.txtTextFieldStyles(txtContact)
+        Utility.txtTextFieldStyles(txtDepartment)
+    }
 
     @IBAction func changeImage(_ sender: UIButton) {
         self.present(imagePicker, animated: true, completion: nil)
@@ -76,24 +89,24 @@ class UiTabProfileViewController: UIViewController {
     @IBAction func btnUpdateUser(_ sender: UIButton) {
         
         if (txtFirstName.text == "") {
-            alert.showAlert(title: "Event", message: "Title is required:",buttonText: "Add Missing Event")
+            alert.showAlert(title: "Event", message: "First Name Required:",buttonText: "Add Missing Event")
             return
         }
         
         if (txtLastName.text == ""){
-            alert.showAlert(title: "Event", message: "Title is required:",buttonText: "Add Missing Event")
+            alert.showAlert(title: "Event", message: "Lasr Name Required:",buttonText: "Add Missing Event")
             return
         }
         if (txtContact.text == ""){
-            alert.showAlert(title: "Event", message: "Title is required:",buttonText: "Add Missing Event")
+            alert.showAlert(title: "Event", message: "Contact Required:",buttonText: "Add Missing Event")
             return
         }
         if (txtDepartment.text == ""){
-            alert.showAlert(title: "Event", message: "Title is required:",buttonText: "Add Missing Event")
+            alert.showAlert(title: "Event", message: "Department Required:",buttonText: "Add Missing Event")
             return
         }
         if (imgeUser.image == nil){
-            alert.showAlert(title: "Event", message: "Title is required:",buttonText: "Add Missing Event")
+            alert.showAlert(title: "Event", message: "Please Add User Image:",buttonText: "Add Missing Event")
             return
         }
         self.saveFIRData()

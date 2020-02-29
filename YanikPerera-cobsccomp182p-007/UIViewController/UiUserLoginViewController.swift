@@ -14,14 +14,30 @@ class UiUserLoginViewController: UIViewController {
 
     @IBOutlet weak var txtUsername: UITextField!
     @IBOutlet weak var txtPassword: UITextField!
+    @IBOutlet weak var btnLogin: UIButton!
+    @IBOutlet weak var btnForgetPass: UIButton!
     override func viewDidLoad() {
+        styleElements()
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
+    func styleElements(){
+        Utility.btnButtonStyles(btnLogin)
+        Utility.txtTextFieldStyles(txtUsername)
+        Utility.txtTextFieldStyles(txtPassword)
+    }
+    
     
     @IBAction func btnLogin(_ sender: UIButton) {
         let alert = AlertFunction();
+        
+        if (txtUsername.text == "") {
+            alert.showAlert(title: "Error with Save", message: "Please Fill User Name:",buttonText: "Add Missing Field")
+            return}
+        if (txtPassword.text == "") {
+            alert.showAlert(title: "Error with Save", message: "Please Fill Password:",buttonText: "Add Missing Field")
+            return}
         
         Auth.auth().signIn(withEmail: txtUsername.text!, password: txtPassword.text!) { (user, error) in
             if error != nil {

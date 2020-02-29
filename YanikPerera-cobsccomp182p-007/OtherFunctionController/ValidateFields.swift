@@ -10,20 +10,29 @@ import Foundation
 class ValidateFields {
     
     func usernameValid(username : String) -> Bool {
-        return username.count > 5
+        let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
+        
+        let emailPred = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
+        return emailPred.evaluate(with: username)
+       // return username.count > 5
     }
-    func passwordValid(password : String) -> Bool {
+    func passwordValid(password:String) -> Bool {
+       /* let RegEx = "\\w{7,18}"
+        let Test = NSPredicate(format:"SELF MATCHES %@", RegEx)
+        return Test.evaluate(with: password) */
         return password.count > 8
     }
-    
-    func validateMovieForm(name: String,director: String,rating : String) -> Bool{
+    func contactValid(contact : String) -> Bool {
+       /* let contactRegEx = "^7|0|(?:\+94)[0-9]{9,10}";
+        let contactPred = NSPredicate(format:"SELF MATCHES %@", contactRegEx)
+        return contactPred.evaluate(with: username)*/
+         return contact.count == 10
+    }
+    func isValidEmail(txtEmail: String) -> Bool {
+        let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
         
-        if(name.count>3 && director.count>3 &&  (Int(rating) != nil)){
-            
-            return true;
-        }
-        return false;
-        
+        let emailPred = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
+        return emailPred.evaluate(with: txtEmail)
     }
     
 }

@@ -9,12 +9,24 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var btnHome: UIButton!
+    
+    @IBOutlet weak var btnLogin: UIButton!
+    
+    @IBOutlet weak var btnSignin: UIButton!
+    
     override func viewDidLoad() {
+         styleElements()
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
+    func styleElements(){
+       
+        Utility.btnButtonStyles(btnHome)
+        Utility.btnButtonStyles(btnLogin)
+        Utility.btnButtonStyles(btnSignin)
+        
+    }
 
 }
 
