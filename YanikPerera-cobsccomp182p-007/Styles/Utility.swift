@@ -18,6 +18,14 @@ class Utility {
         
         
     }
+    static func btnButtonStylesRed(_ button:UIButton) {
+        
+        button.backgroundColor = UIColor.init(red: 255/255, green: 45/255, blue: 33/255, alpha: 1)
+        button.layer.cornerRadius = 15.0
+        button.tintColor = UIColor.white
+        
+        
+    }
     
     static func txtTextFieldStyles(_ textfield:UITextField) {
         

@@ -12,6 +12,7 @@ import Firebase
 import FirebaseFirestore
 import FirebaseStorage
 import SwiftyJSON
+import MapKit
 
 class UiTabCreateViewController: UIViewController {
 
@@ -21,7 +22,7 @@ class UiTabCreateViewController: UIViewController {
     @IBOutlet weak var imgPicture: UIImageView!
     @IBOutlet weak var txtSummary: UITextField!
     @IBOutlet weak var btnUploadEvent: UIButton!
-    @IBOutlet weak var btnAddimg: UIButton!
+    @IBOutlet weak var btnAddimage: UIButton!
     @IBOutlet weak var btnLocation: UIButton!
     
     var imagePicker:UIImagePickerController!
@@ -50,7 +51,8 @@ class UiTabCreateViewController: UIViewController {
     
     func styleElements(){
         
-        Utility.btnButtonStyles(btnUploadEvent)
+       // Utility.btnButtonStylesRed(btnAddimg)
+     //   Utility.btnButtonStyles(btnUploadEvent)
         Utility.txtTextFieldStyles(txtEventTitle)
         Utility.txtTextFieldStyles(txtEventDiscription)
         Utility.txtTextFieldStyles(txtLocation)
@@ -58,7 +60,24 @@ class UiTabCreateViewController: UIViewController {
         
     }
 
-
+    @IBAction func btnLocation(_ sender: UIButton) {
+        let latitude:CLLocationDegrees = 6.906731
+        let longitude:CLLocationDegrees = 79.870616
+        
+        let regionDistance:CLLocationDistance = 1000;
+        let coordinates = CLLocationCoordinate2DMake(latitude, longitude)
+        let regionSpan = MKCoordinateRegion(center: coordinates, latitudinalMeters: regionDistance, longitudinalMeters: regionDistance)
+        
+        let options = [MKLaunchOptionsMapCenterKey: NSValue(mkCoordinate: regionSpan.center), MKLaunchOptionsMapSpanKey: NSValue(mkCoordinateSpan: regionSpan.span)]
+        
+        let placemark = MKPlacemark(coordinate: coordinates)
+        let mapItem = MKMapItem(placemark: placemark)
+        mapItem.name = "My House"
+        mapItem.openInMaps(launchOptions: options)
+        
+        
+    }
+    
     /*
     // MARK: - Navigation
 
