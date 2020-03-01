@@ -572,18 +572,18 @@
                                                         <rect key="frame" x="0.0" y="278" width="414" height="45"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0yx-X4-AsT">
-                                                                <rect key="frame" x="0.0" y="0.0" width="60" height="45"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="100" height="45"/>
                                                                 <constraints>
+                                                                    <constraint firstAttribute="width" constant="100" id="Lmz-gR-GZf"/>
                                                                     <constraint firstAttribute="height" constant="45" id="xGn-M2-PRG"/>
-                                                                    <constraint firstAttribute="width" constant="60" id="yfe-Of-cUS"/>
                                                                 </constraints>
-                                                                <state key="normal" title="Button" image="location.jpg"/>
+                                                                <state key="normal" title="Button" image="GPS.png"/>
                                                                 <connections>
                                                                     <action selector="btnLocation:" destination="Mk5-Dr-bbo" eventType="touchUpInside" id="QdE-W0-BD4"/>
                                                                 </connections>
                                                             </button>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Event Location" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1vx-92-BMU">
-                                                                <rect key="frame" x="68" y="0.0" width="346" height="45"/>
+                                                                <rect key="frame" x="108" y="0.0" width="306" height="45"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="45" id="uaQ-MR-s06"/>
                                                                 </constraints>
@@ -1129,6 +1129,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="GPS.png" width="259" height="194"/>
         <image name="NIBM-Logo.jpg" width="336" height="188"/>
         <image name="User profile img.jpg" width="976" height="952"/>
         <image name="add-image.png" width="160" height="160"/>
@@ -1136,7 +1137,6 @@
         <image name="events_bricks-825x510.jpg" width="825" height="510"/>
         <image name="face-id-img.png" width="160" height="160"/>
         <image name="home-7" width="30" height="30"/>
-        <image name="location.jpg" width="852" height="480"/>
         <image name="paper-piece-plus-7" width="30" height="30"/>
         <image name="touch-id_img.png" width="800" height="600"/>
     </resources>
