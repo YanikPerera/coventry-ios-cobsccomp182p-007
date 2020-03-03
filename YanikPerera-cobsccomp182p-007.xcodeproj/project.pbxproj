@@ -11,6 +11,8 @@
 		390CAA20240594A1009EE35D /* UiPostsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390CAA1F240594A1009EE35D /* UiPostsViewController.swift */; };
 		390F9BAA240C0D3B00F1E9CB /* UiTabDefaultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390F9BA9240C0D3B00F1E9CB /* UiTabDefaultViewController.swift */; };
 		3982675624025735000CA21A /* UiEventHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3982675524025735000CA21A /* UiEventHomeViewController.swift */; };
+		39936034240E9B2D004FA994 /* AllUserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39936033240E9B2D004FA994 /* AllUserTableViewCell.swift */; };
+		39936036240E9BA2004FA994 /* AllUserTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39936035240E9BA2004FA994 /* AllUserTableViewController.swift */; };
 		3996852023FE899700208EA3 /* User profile img.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3996851F23FE899700208EA3 /* User profile img.jpg */; };
 		3996852223FED86500208EA3 /* UiTabHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3996852123FED86500208EA3 /* UiTabHomeViewController.swift */; };
 		3996852623FEEE6B00208EA3 /* UiTabBarHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3996852523FEEE6B00208EA3 /* UiTabBarHomeViewController.swift */; };
@@ -71,6 +73,8 @@
 		390CAA1F240594A1009EE35D /* UiPostsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UiPostsViewController.swift; sourceTree = "<group>"; };
 		390F9BA9240C0D3B00F1E9CB /* UiTabDefaultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UiTabDefaultViewController.swift; sourceTree = "<group>"; };
 		3982675524025735000CA21A /* UiEventHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UiEventHomeViewController.swift; sourceTree = "<group>"; };
+		39936033240E9B2D004FA994 /* AllUserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllUserTableViewCell.swift; sourceTree = "<group>"; };
+		39936035240E9BA2004FA994 /* AllUserTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllUserTableViewController.swift; sourceTree = "<group>"; };
 		3996851F23FE899700208EA3 /* User profile img.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "User profile img.jpg"; sourceTree = "<group>"; };
 		3996852123FED86500208EA3 /* UiTabHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UiTabHomeViewController.swift; sourceTree = "<group>"; };
 		3996852523FEEE6B00208EA3 /* UiTabBarHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UiTabBarHomeViewController.swift; sourceTree = "<group>"; };
@@ -161,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				39AA90C9240587BE00D5FEEE /* EventsTableViewCell.swift */,
+				39936033240E9B2D004FA994 /* AllUserTableViewCell.swift */,
 			);
 			path = UItableviewcell;
 			sourceTree = "<group>";
@@ -250,6 +255,7 @@
 				3982675524025735000CA21A /* UiEventHomeViewController.swift */,
 				390CAA1F240594A1009EE35D /* UiPostsViewController.swift */,
 				390F9BA9240C0D3B00F1E9CB /* UiTabDefaultViewController.swift */,
+				39936035240E9BA2004FA994 /* AllUserTableViewController.swift */,
 			);
 			path = UIViewController;
 			sourceTree = "<group>";
@@ -557,11 +563,13 @@
 				390F9BAA240C0D3B00F1E9CB /* UiTabDefaultViewController.swift in Sources */,
 				3996852A23FF071100208EA3 /* UiTabCreateViewController.swift in Sources */,
 				39FA37E223FE6D98007048AC /* ValidateFields.swift in Sources */,
+				39936036240E9BA2004FA994 /* AllUserTableViewController.swift in Sources */,
 				39D8EF9A2402E8E400F38959 /* ArtistModel.swift in Sources */,
 				390CAA20240594A1009EE35D /* UiPostsViewController.swift in Sources */,
 				3996852623FEEE6B00208EA3 /* UiTabBarHomeViewController.swift in Sources */,
 				39AA90C7240586C400D5FEEE /* Event.swift in Sources */,
 				39FA37E023FE6D6E007048AC /* AlertFunction.swift in Sources */,
+				39936034240E9B2D004FA994 /* AllUserTableViewCell.swift in Sources */,
 				39FF40622408399B0068FCF8 /* Utility.swift in Sources */,
 				3996852823FF066900208EA3 /* UiTabProfileViewController.swift in Sources */,
 				3996852223FED86500208EA3 /* UiTabHomeViewController.swift in Sources */,
